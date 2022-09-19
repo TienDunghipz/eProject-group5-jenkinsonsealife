@@ -10,7 +10,9 @@ Group 5
 
 3 collaborators:
    Pham Hung Quoc Vinh	 Student1381861
+   
    Nguyen Le Tien Dung	 Student1384673
+   
    Ho Thong Vien	       Student1384662
 
 eProject documentaion at: https://github.com/TienDunghipz/eProject-group5-jenkinsonsealife/tree/master/Document
