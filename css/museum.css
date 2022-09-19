@@ -1,0 +1,492 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html, body {
+	width: auto;
+	/* font-family:url(https://fonts.googleapis.com/css?family=Open+Sans);  */
+	font-size: 18px;
+	line-height: 25px;
+	scroll-behavior: smooth;
+	background-color: rgb(117, 189, 236);
+}
+h1, h2, h3, h4, h5{
+	text-transform: uppercase;
+	color:white;
+}
+h1, h2, h3 {
+	text-shadow: 1px 1px 5px rgb(32, 34, 34);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar {
+	background-color: #2782c7 !important;
+	position: fixed;
+	width: 100%;
+	height: 110px;
+}
+.navbar li a {
+    color: white !important;
+	text-decoration: none;		
+	margin: 0px 20px;
+	font-size: 20px;
+	text-indent: 1px;	
+}
+.navbar li a span{
+	font-family: 'Open Sans', serif;
+	display: inline-block;
+}
+
+.navbar li a:hover {
+    color:black !important;
+}
+header nav img {
+	height: 90px;
+}
+.dropdown-menu {
+	background-color:rgba(97, 86, 86, 0.658) !important;
+}
+.dropdown{
+	cursor: pointer;
+}
+.dropdown li :hover {
+	display: flex;
+	background-color:gray;
+	margin: auto;
+}
+header #slides .carousel-inner{
+	width: 100%;
+	height: 90vh;
+}
+
+.carousel-inner img {
+	width: 100%;
+}
+#content {
+	color: white;
+	margin: auto;
+	text-align: justify;
+	padding: 15px 0px;
+}
+
+.container-fluid .showroom{
+	height: 200px;
+}
+div.card h4 {
+	color: black;
+}
+div.card .card-body {
+	background-color:rgba(248, 241, 241, 0.884);
+	height: 180px;
+	position: relative;
+	align-self: auto;	
+}
+div.card .card-body .card-text  {
+	position: absolute;
+	bottom: 40px;
+	width: 100%;
+	left: 0px;
+	font-weight:600;
+}
+
+div.card .card-body a {
+	position: absolute;
+	bottom: 20px;
+	left: 0px;
+}
+
+.container-fluid ol li{
+    text-align: justify;
+}
+.container-fluid #animation a{
+	width: 100%;
+	height: auto;
+	position: relative;
+	animation-name: search;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+@keyframes search {
+	0%   {color: paleturquoise; left:30%; top: -40%;}
+	25%  {color: powderblue; left:70%; top:-40%;}
+	50%  {color: skyblue; left:70%; top: 80%;}
+	75%  {color:thistle ;left:30%; top: 80%;}
+	100% {color: lightgrey ;left:30%; top:-40%;}
+  }
+.container-fluid #righthand{
+	position: relative;
+	animation-name: right;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes right {
+	0%   { left:7%;}
+	50%  {left:12%; }
+	100% {left:7%; }
+  }
+  .container-fluid #lefthand{
+	position: relative;
+	animation-name: left;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes left {
+	0%   { left:-5%;}
+	50%  {left:-10%; }
+	100% {left:-5%; }
+  }
+.in {
+	position: relative;
+	display: inline-block;
+	animation-name: more ;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	
+}  
+@keyframes more {
+	0%   {left:20%;}
+	50%  {left:70%; }
+	100% {left:20%; }
+	
+} 
+/* star contact page*/ 
+iframe{
+	display: block;
+	width: 100%;
+	margin: 2rem auto 2rem auto;
+}
+.get input{
+	width: 100%;
+}
+.get{
+	margin: 2rem 2rem 2rem 6rem;
+}
+.contact{
+	padding-left: 4rem;
+	padding-right: 0;
+}
+.geth div{
+	margin-bottom: 1rem;
+}
+.bold{
+	font-weight: bolder;
+}
+
+button{
+  margin-right: 1rem;
+  
+}
+.get input , .get .btn , .get textarea{
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+.social a {
+	font-size: 3em;
+	padding: 3rem;
+}
+.container-fluid #click{
+    animation-name: click;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+@keyframes click {
+  from {background-color:rgb(87, 211, 233);}
+  to {background-color: rgb(255, 127, 255);}
+}
+
+.conntainer-fluid padding pt-3{
+	padding-bottom: 30px;
+}
+.team {
+	padding: 50px;
+}
+.team-7{
+	display: flex;
+	justify-content:center; 
+}
+.team-avartar {
+	margin: auto;
+	padding: auto;
+}
+#avartar {
+	position: absolute;
+}
+#avartar img {
+	height: 250px;
+	width: 300px;
+	border: 2px solid papayawhip;
+	border-radius: 20px;
+}
+#avartar-inf {
+	width: 300px;
+	height: 250px;
+	display: block;
+	line-height: 10px;
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+#avartar-inf .inf {
+	position: relative;
+	visibility: hidden;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 2s;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#avartar-inf:hover .inf {
+position: relative;
+height: 250px;
+visibility: visible; 
+opacity: 5;
+cursor: pointer;
+line-height: 20px;
+font-weight:900;
+border-radius: 20px;
+}
+#avartar-inf .inf ul {
+	list-style-type: none;
+	float: left;
+	display: inline-flex;
+}
+#avartar-inf .inf ul li {
+	margin-left: 40px;
+}
+.fa-facebook {
+	color: #3c61af;
+}
+.fa-twitter {
+	color: #00aced;	
+}
+.fa-google-plus-g {
+	color: #dd4b39;
+}
+.fa-instagram {
+	color: #e96099;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+.fa-facebook:hover {
+	color: #495b81;
+}
+.fa-twitter:hover {
+	color:  #48bee9;	
+}
+.fa-google-plus-g:hover {
+	color: #d67568;
+}
+.fa-instagram:hover {
+	color: #6db5f0;
+}
+.fa-youtube:hover {
+	color:#bb3e3e; 
+}
+
+footer {
+	background-color:rgb(117, 189, 236);
+	color: #d8caca;
+    width: 100% !important;
+    margin: auto !important;
+}
+
+footer h5 {
+	font-style: normal;
+	color: honeydew;
+	font-weight: bolder;
+}
+
+footer p, footer i {
+	font-style: normal;
+	font-weight: bold;
+	color: lavender;
+}
+hr.light {
+	border-top: 1px solid #d5d5d5;
+	width: 75%;
+}
+.light-100 {
+	border-top: 1px solid #d5d5d5;
+	width: 100%;
+}
+footer .focus {
+	line-height: 50px;
+}
+/* end contact page */
+/* star feedback page */
+.container {
+	position: relative;
+	width: 300px;
+	background: #111;
+	padding: 10px 20px;
+	border: 1px solid black;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.container .post{
+	
+	display: none;
+	z-index: 1;
+}
+.container .text{
+	font-size: 25px;
+	color: #666;
+	font-weight: 500;
+}
+.container .edit{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	font-size: 18px;
+	color: #666;
+	font-weight: 500;
+}
+.container .edit:hover{
+text-decoration: underline;
+}
+.container .star-widget input{
+	display: none;
+}
+.star-widget label{
+	font-size: 25px;
+	color: #444;
+	padding: 10px;
+	float: right;
+	transition: all 0.2s ease-in-out;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+	color: yellow;
+
+}
+input:checked ~ label{
+	color: yellow;
+}
+input#star-5:checked ~ label{
+	color: yellow;
+	text-shadow: 0 0 20px red;
+}
+#rate-1:checked ~ form header::before{
+	content: "I hate it 😡";
+}
+#rate-2:checked ~ form header::before{
+	content: "I don't like it 😌";
+}
+#rate-3:checked ~ form header::before{
+	content: "It 's awesome 😆";
+}
+#rate-4:checked ~ form header::before{
+	content: "I just like it 😃";
+}
+#rate-5:checked ~ form header::before{
+	content: "It 's usefull 😍";
+}
+.container form{
+	display: none;
+}
+input:checked ~ form{
+	display: block;
+}
+.container header{
+	display: inline-block;
+	
+}
+form header{
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	color: yellow;
+	font-weight: 500px;
+	display: inline-block;
+	margin: 5px 0 20px 0;
+	transition: all 0.2 ease;
+}
+form .textare{
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+}
+form .textarea textarea{
+	height: 100%;
+	width: 100%;
+	outline: none;
+	color: #eee;
+	border: 1px solid #333;
+	background: #222;
+	padding: 10px;
+	font-size: 17px;
+	border-radius: 5px;
+	resize: none;
+}
+form .btn{
+	width: 100%;
+	height: 50px;
+	
+	
+}
+form .btn button{
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid black;
+	outline: none;
+	background: #222;
+	color: #999;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+form .btn button,
+.container .edit,
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+	cursor: pointer;
+}
+form .btn button:hover{
+	background: #1b1b1b;
+}
+
+/* SCORE */
+.container3{
+	border: 2px solid palegoldenrod;
+	border-radius: 10px;
+	background: rgb(241, 235, 235);
+	margin: auto;
+	padding: auto;
+}
+.container3 .row{
+	padding: 10px 100px;
+}
+
+.row {
+	display: flex;
+	
+}
+.row .col ul li{
+	/* width: 100%;
+	transform: translateX(-150px); */
+	list-style-type: none;
+	margin-top: 5px;
+	margin-left: 20px;
+	font-size: 15px !important;
+	line-height: 8px !important;
+}
+.row .col ul li span{
+	display: inline-block;
+	padding: 5px 0px;
+}
+button{
+	padding: 6px;
+	border-radius: 5px;
+}
+.collapse{
+	padding-top: 8px;
+	text-transform: uppercase;
+}
+/* end feedback page */

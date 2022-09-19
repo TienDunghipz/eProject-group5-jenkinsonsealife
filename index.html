@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/museum.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/ani.css">
+    <link rel="stylesheet" href="./css/galle.css">
+    <link rel="stylesheet" href="./css/headfoot.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-branch" href="#">
+                    <img src="./IMG/logo-comment/Jenkinson-removebg-preview.png" alt="none">
+                </a>
+                <button class="navbar-toggler" title="none" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class=" nav-link  active  fas fa-user">
+                              &nbsp;<span class=" website-counter"></span>
+                            </a>
+                        </li>
+                        <script>
+                            var counterContainer = document.querySelector(".website-counter");
+                            var resetButton = document.querySelector("#reset");
+                            var visitCount = localStorage.getItem("page_view");
+
+                            // Check if page_view entry is present
+                            if (visitCount) {
+                                visitCount = Number(visitCount) + 1;
+                                localStorage.setItem("page_view", visitCount);
+                            } else {
+                                visitCount = 1;
+                                localStorage.setItem("page_view", 1);
+                            }
+                            counterContainer.innerHTML = visitCount;
+
+                        </script>
+                        <li class="nav-item">
+                            <a class="nav-link active fa fa-home" href="index.html"> <span>HOME</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-images" href="gallery.html"> <span>GALLERY</span> </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fa fa-newspaper" data-toggle="dropdown">
+                                <span>Events</span> </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a class="nav-link fa fa-address-book" href="allevent.html">
+                                        <span>ALL</span></a></li>
+                                <li class="nav-item"><a class="nav-link fa fa-flag " href="adult.html"> ADULT</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link fa fa-circle" href="kid.html">
+                                        KIDS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-comment" href="Feedback.html"> <span>FEEDBACK</span> </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fa fa-mobile-alt" href="contact.html"> <span>CONTACT US</span> </a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- slider - Corousel -->
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#slides" data-slide-to="0" class="active"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+                <li data-target="#slides" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./IMG/IMG-Hung/Untitled.jpg">
+                    <!-- Hình page home thứ 1 -->
+                    <div class="carousel-caption">
+                        <h1 class="display-2"></h1>
+                        <h3></h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMG/IMG-Hung/home1,1-1495368008737-9d436e094dd5.jpg">
+                    <!-- Hình Page Home Thứ 2 -->
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMG/IMG-Hung/homeheader1.png">
+                    <!-- Hình Page Home thứ 3 -->
+                </div>
+                <div class="carousel-item">
+                    <img src="./IMG/IMG-Hung/home3.png">
+                    <!-- Hình Page Home Thứ 4 -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div id="about" class="container-fluid padding col-lg-12 col-sm-8 col-xl-8">
+        <div class="row welcome text-center">
+            <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12" id="animation" style="padding: 50px 0px;">
+                <a href="#"><i class="fa fa-search" style="float: left; font-size: 40px;  "></i></a>
+                <h1 class="display-4">About us</h1>
+            </div>
+        </div>
+        <div class="row welcome text-center pt-4 m-lg-0">
+            <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12">
+                <h3>THE FOUNDATION AND DEVELOPMENT OF JENKINSON </h3>
+                <p id="content" class="col-md-12 col-sm-12 col-xl-12 col-lg-8">Jenkinson Sea Life mission is to instill
+                    a sense of wonder, respect, and stewardship for the Pacific Ocean, its inhabitants, and
+                    ecosystems.Our vision is to create an aquarium dedicated to conserving and building Natural Capital
+                    (Nature and Nature’s services) by building Social Capital (the interactions between and among
+                    peoples).
+                </p>
+                <hr>
+                <p id="content" class="col-md-12 col-sm-12 col-xl-12 col-lg-8">Jenkinson Sea Life has redefined the
+                    modern aquarium. It is a community gathering place where diverse cultures and the arts are
+                    celebrated and a place where important topics facing our planet and our ocean are explored by
+                    scientists, policymakers, and stakeholders in the search for sustainable solutions </p>
+                <p id="content" class="col-md-12 col-sm-12 col-xl-12 col-lg-8 ">It has taken a bold new approach in the
+                    future of aquariums with the opening of its Jenkinson Visions wing.
+                    Each year approximately 1.7 million people visit the Aquarium, making it consistently one of the
+                    leading attractions in the Los Angeles region. Beyond its world-class animal exhibits, the Aquarium
+                    offers educational programs for people of all ages from hands-on activities to lectures by leading
+                    scientists. Through these programs and a variety of multimedia experiences, the Aquarium provides
+                    opportunities to delve deeper into ocean science and learn more about our planet.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <a href="#" id="lefthand"><i class="fa fa-hand-point-left"
+                        style="float: right; font-size: 40px; padding-top: 25px;"></i>
+                    <a href="#" id="righthand"><i class="fa fa-hand-point-right"
+                            style="float: left; font-size: 40px;; padding-top: 25px;"></i></a>
+                </a>
+                <h3 class="display-4">WANT TO DISCOVER MORE EVENTS</h3>
+            </div>
+            <div class="col-12" id="question" style="padding-top: 50px;">
+                <h3 class="display-4">You want to know more ?</h3>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 pt-3">
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                    </ul>
+                    <div class="carousel-inner img-thumbnail showroom">
+                        <div class="carousel-item active">
+                            <img src="./IMG/IMG-Hung/imgfoot2.jpg">
+                            <div class="carousel-caption">
+                                <h1 class="display-2"></h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./IMG/IMG-Hung/imgfoot.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!-- More events -->
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Ocean Conservation and Community Science Course
+                        </h4>
+                        <p class="card-text">HOT</p>
+                        <a href="./EventHome/oceanconservation.html" class="btn btn-outline-secondary embed-responsive"
+                            id="click">Checked</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 pt-3">
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                    </ul>
+                    <div class="carousel-inner img-thumbnail showroom">
+                        <div class="carousel-item active">
+                            <img src="./IMG/IMG-Hung/imgfoot3.jpg">
+                            <div class="carousel-caption">
+                                <h1 class="display-2"></h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./IMG/IMG-Hung/imgfoot4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Night Dive
+                        </h4>
+                        <p class="card-text">NEW</p>
+                        <a href="./EventHome/nightdive.html" class="btn btn-outline-secondary embed-responsive"
+                            id="click">Checked</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 pt-3">
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                    </ul>
+                    <div class="carousel-inner img-thumbnail showroom">
+                        <div class="carousel-item active">
+                            <img src="./IMG/IMG-Hung/imgfoot5.jpg">
+                            <div class="carousel-caption">
+                                <h1 class="display-2"></h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./IMG/IMG-Hung/imgfoot6.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Photographers Night
+                        </h4>
+                        <p class="card-text">RECOMMEND</p>
+                        <a href="./EventHome/photographe.html" class="btn btn-outline-secondary embed-responsive"
+                            id="click">Checked</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 pt-3">
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                    </ul>
+                    <div class="carousel-inner img-thumbnail showroom">
+                        <div class="carousel-item active">
+                            <img src="./IMG/IMG-Hung/imgfoot7.jpg">
+                            <div class="carousel-caption">
+                                <h1 class="display-2"></h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./IMG/IMG-Hung/imgfoot8.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Southeast Asia Day
+                        </h4>
+                        <p class="card-text">NEW</p>
+                        <a href="./EventHome/asianday.html" class="btn btn-outline-secondary embed-responsive"
+                            id="click">Checked</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br>
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12 pt-4">
+
+                <a href="#" id="lefthand"><i class="fa fa-hand-point-left"
+                        style="float: right; font-size: 40px; padding-top: 25px;"></i>
+                    <a href="#" id="righthand"><i class="fa fa-hand-point-right"
+                            style="float: left; font-size: 40px;; padding-top: 25px;"></i></a>
+                </a>
+                <h3 class="display-4">WANT TO DISCOVER MORE EVENTS</h3>
+            </div>
+            <hr>
+            <div class="container-fluid padding pt-3">
+                <div class="row text-center padding">
+                    <div class="col-12">
+                        <h2>Contact us</h2>
+                    </div>
+                    <div class="col-12 social padding">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- footer -->
+            <footer>
+                <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-md-4" style="line-height: 50px;">
+                            <hr class="light">
+                            <a href="contact.html">
+                                <h5>About us</h5>
+                            </a>
+                            <hr class="light">
+                            <i class="fa fa-phone" aria-hidden="true"> 012-345-6789 </i>
+                            <address> <a href="mailto:support.hkn@gmail.com">
+                                    <p class="bold">support@Jenkinson.com</p>
+                                </a></address>
+                            <i class="fa fa-street-view" aria-hidden="true"> 590 CMT8 street, Ward 11, District 3, Ho
+                                Chi Minh
+                                City</i>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>Working hours</h5>
+                            <hr class="light">
+                            <div class="focus">
+                                <p class="fa fa-calendar-alt"> Monday-Friday: 8AM - 6PM</p> <br>
+                                <p class="fa fa-calendar-plus"> Weekend: 8AM - 10PM</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <hr class="light">
+                            <h5>Services</h5>
+                            <hr class="light">
+                            <div class="focus">
+                                <p class="fa fa-weibo text-md-center"> Contact us </p> <br>
+                                <p class="fa fa-app-store text-md-center"> Mobile App </p> <br>
+                                <p class="fa fa-phone"> Onphone </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <hr class="light-100">
+                            <h5>&copy; JENKINSON SEA LIFE</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-top" title="Top" style="display: inline;"><span class="fa fa-arrow-circle-up"></span>
+
+                    <p id="demo" style="color:white ;"></p>
+                    <script>
+                        setInterval(myTimer, 1000);
+
+                        function myTimer() {
+                            const d = new Date();
+                            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+                        }
+                    </script>
+                </div>
+            </footer>
+            <script>
+                $(".btn-top").click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    });
+                });
+            </script>
+            <!-- end footer -->
+
+</body>
+
+</html>
